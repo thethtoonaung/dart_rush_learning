@@ -3,9 +3,7 @@
 
 // ------------------ Function as a parameter Eg 1 -------------- //
 
-import 'package:dart_rush_learning/11_functions.dart';
-import 'package:dart_rush_learning/Function/1_function.dart';
-import 'package:dart_rush_learning/Function/3_lambda_function.dart';
+
 
 void main() {
   showTriple(number: 5, result: showResult);
