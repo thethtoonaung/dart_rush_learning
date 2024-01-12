@@ -1,13 +1,15 @@
 // Static Variable and Method
-// instance variable so tar class ta khu instantiate load pe ma refrence variable a nay net call lo ya
+// instance variable so tar class ta khu instantiate load pe ma
+// -- refrence variable a nay net call lo ya
 // static variable so tar instantiate load sa yar ma lo bal call lo ya
 // api yet endpoint a nay net thone lo ya
-// static method ko kyike tet method mar call thone lo ya  
-// but a char method ko tot static htel use lo ma ya
-import '2_constructor.dart';
+// static method ko kyike tet method mar call thone lo ya
+// --but a char method ko tot static htel use lo ma ya
 
 void main() {
+  Student.sInfo = "Mg Mg"; // can call Direct No need Instantiate
   Student student1 = Student(); // instantiate
+  // student1.sInfo = ""; can' call because of Static
   student1.name = "Mg Mg";
   student1.age = 25;
   student1.address = "Myanmar";
@@ -30,6 +32,7 @@ void main() {
   for (var value in students) {
     value.study();
   }
+  
 
   print(Student.sInfo); // Static
   Student.sInfo = "Change Static variable Info";

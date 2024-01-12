@@ -1,4 +1,5 @@
-//
+// Inheritance load htar tet parnet class constructor mar Parameter par yin
+// -- current class ka constructor mar lal parameter call pay ya dl 
 void main() {
   // UniversityStudent student = UniversityStudent();
   // Or

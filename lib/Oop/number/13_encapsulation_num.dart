@@ -5,8 +5,10 @@ class Number {
     print(n * _num);
   }
 
-  int get numb =>
-      _num; // private phit nay tet value ko change chin yin getter setter net htae
+  int get numb => // private phit nay tet value ko getter net u
+      _num;
+  // private phit nay tet value ko change chin yin
+  // -- getter setter net htae
 
   set numb(int value) {
     if (value > 0) {

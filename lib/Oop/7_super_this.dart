@@ -1,4 +1,6 @@
-//
+// Super ka Parent class htel ka method ko bal khaw tar
+// this ka child class htel ka method ko khaw tar
+
 void main() {
   Student student = Student();
   student.name = "aa";
@@ -30,7 +32,8 @@ class Student extends Person {
     print("parent\'s info is");
     super.info(); // Super ka Parent class htel ka method ko bal khaw tar
     print("child\'s info is ");
-    this.info(); // this ka child class htel ka methoid ko khaw tar // this  net ma ray lal ya
+    this.info(); // this ka child class htel ka method ko khaw tar //
+    //this  net ma ray lal ya
     print("parent variable age is ${super.age}");
     print("child variable age is ${this.age}");
     print("-----------");

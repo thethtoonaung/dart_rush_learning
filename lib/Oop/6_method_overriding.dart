@@ -1,4 +1,6 @@
-// parent class htel mar shi tet method twe ko child class ka nay modify chin yin Method Override
+// parent class htel mar shi tet method twe ko
+// -- child class ka nay modify chin yin Method Override
+// that is call Polymorphism
 
 void main() {
   Student student = Student();
