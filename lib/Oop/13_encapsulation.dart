@@ -18,4 +18,83 @@ void main() {
   number.triple2(10);
 }
 
+// -------------------------------------------- //
 
+class Employee {
+  int? _id;
+  String? _name;
+
+  int getId() {
+    return _id!;
+  }
+
+  String getName() {
+    return _name!;
+  }
+
+  void setId(int id) {
+    this._id = id;
+  }
+
+  void setName(String name) {
+    this._name = name;
+  }
+}
+
+void main2() {
+  Employee emp = Employee();
+  emp._id = 1;
+  emp._name = "John";
+
+  print("Id: ${emp.getId()}");
+  print("Name: ${emp.getName()}");
+}
+
+// ------------------------------------------ //
+
+class Vehicle {
+  String? _model;
+  String? _year;
+
+  String get model => _model ?? "";
+  String get year => _year ?? "";
+
+  set model(String model) => _model = model;
+  set year(String year) => _year = year;
+}
+
+void main3() {
+  var vehicle = Vehicle();
+  vehicle._model = "GTR";
+  vehicle._year = "2008";
+
+  print(vehicle._model);
+  print(vehicle._year);
+}
+
+// ---------------------------- //
+
+class Person {
+  // Properties
+  String? firstName;
+  String? lastName;
+
+  // // Constructor
+  Person(this.firstName, this.lastName);
+
+  // Getter
+  String get fullName => "$firstName $lastName";
+
+  // Map Getter
+  Map<String, dynamic> get map {
+    return {"firstName": firstName, "lastName": lastName};
+  }
+
+  set setFirstName(String firstN) => this.firstName = firstN;
+}
+
+void main4() {
+  Person p = Person("John", "Doe");
+  print(p.fullName);
+  p.setFirstName = "setName VarNyar";
+}
